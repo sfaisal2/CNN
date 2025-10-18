@@ -1,7 +1,7 @@
 # Convolutional Neural Network Model
 
 ## Description 
-This is a CNN Model to classify grayscale images of clothing into 10 clothing categories using the 70,000 images in the Fashion MNIST Dataset to train and test the model. The model is implemented in Python, using Keras and TensorFlow.   
+This is a CNN Model to classify grayscale images of clothing into 10 clothing categories using the 70,000 images in the Fashion MNIST Dataset to train and test the model. The model is implemented in Python, using Keras and TensorFlow. I tested different epochs and hyperparameters to achieve 90% accuracy.  
 
 ## Dataset
 The clothing items included in the Fashion MNIST, and the categories we classify the images into are:
@@ -29,11 +29,11 @@ The clothing items included in the Fashion MNIST, and the categories we classify
 - Dense Layers: One hidden layer with 128 neurons (ReLU) + Dropout (0.5) + Output layer (10 neurons, softmax)
 
 ## Training and Evaluation Metrics
-Epoch Experiment Results:
+### Epoch Experiment Results:
 - 5 epochs: Test Accuracy = 0.8679
 - 10 epochs: Test Accuracy = 0.8963
 - 15 epochs: Test Accuracy = 0.9060
-Hyperparameter Experiment Results:
+### Hyperparameter Experiment Results:
 1. LR=0.001, Layers=3, Neurons=64: 0.8948
 2. LR=0.005, Layers=3, Neurons=64: 0.8973
 3. LR=0.001, Layers=4, Neurons=64: 0.8971
