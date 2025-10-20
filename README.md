@@ -64,7 +64,7 @@ These four classes, all upper-body garments, show lower performance compared to 
 - Upper-body garments (Shirt, T-shirt/top, Pullover, Coat, Dress) form a cluster with significant cross-confusion
 - Footwear categories show some confusion between Sandal, Sneaker, and Ankle boot
 - Bag has excellent discrimination with minimal confusion with other classes
-![matrix](C:\Users\sarah\Downloads\dsF25\class_performance.png)
+![bargraph](analysis/class_performance.png)
 #### Key observations:
 The bar graph visualization clearly shows Shirt as the lowest performing class (highlighted in red) with an F1-score of 0.6989, significantly below the average performance.
 ### Most Difficult Class Analysis:
