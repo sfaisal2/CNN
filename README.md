@@ -57,7 +57,7 @@ Classes with particularly low accuracy:
 - Pullover: 83.1% accuracy
 These four classes, all upper-body garments, show lower performance compared to other categories like Trouser (96.6%), Bag (97.8%), and Sandal (98.7%).
 ### Confusion Matrix Analysis:
-[cmatrix](analysis/confusion_matrix.png)
+![cmatrix](analysis/confusion_matrix.png)
 #### Key observations:
 - Trouser classification is nearly perfect with 966/1000 correct predictions
 - Shirt is frequently misclassified as T-shirt/top (144 instances), Coat (91 instances), and Pullover (59 instances)
