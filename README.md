@@ -64,6 +64,7 @@ These four classes, all upper-body garments, show lower performance compared to 
 - Upper-body garments (Shirt, T-shirt/top, Pullover, Coat, Dress) form a cluster with significant cross-confusion
 - Footwear categories show some confusion between Sandal, Sneaker, and Ankle boot
 - Bag has excellent discrimination with minimal confusion with other classes
+### Bar Graph Analysis:
 ![bargraph](analysis/class_performance.png)
 #### Key observations:
 The bar graph visualization clearly shows Shirt as the lowest performing class (highlighted in red) with an F1-score of 0.6989, significantly below the average performance.
@@ -71,17 +72,16 @@ The bar graph visualization clearly shows Shirt as the lowest performing class (
 The most difficult class to predict is Shirt, which has the lowest F1-score of 0.6989.
 #### Why Shirt is challenging to predict:
 1. Visual Similarity: Shirts share similar silhouettes and shapes with T-shirts/tops, pullovers, and coats
-Feature Overlap: The collar details and sleeve styles that distinguish shirts from other upper-body garments are subtle and may be lost in the low-resolution 28x28 images
-Category Ambiguity: The boundaries between casual shirts, formal shirts, and other upper-body garments can be blurry
-Texture Limitations: Fabric textures that help humans distinguish shirt materials may not be clearly represented in the grayscale, low-resolution images
+2. Feature Overlap: The collar details and sleeve styles that distinguish shirts from other upper-body garments are subtle and may be lost in the low-resolution 28x28 images
+3. Category Ambiguity: The boundaries between casual shirts, formal shirts, and other upper-body garments can be blurry
+4. Texture Limitations: Fabric textures that help humans distinguish shirt materials may not be clearly represented in the grayscale, low-resolution images
 The confusion matrix confirms this analysis, showing that Shirt is most commonly confused with T-shirt/top (144 misclassifications), Coat (91 misclassifications), and Pullover (59 misclassifications), indicating that the model struggles to distinguish between these visually similar upper-body garment categories.
-Limitations and Future Improvements
-Current Model Limitations:
-Accuracy Plateau: Final accuracy of 90.14% falls just short of the 90% target
-Class Imbalance in Performance: Significant variance in performance across classes (Shirt vs Trouser)
-Limited Architecture Complexity: Current model may be underfitting for this dataset but I was unable to make it more complex because my computer could not handle it and kept overheating
-Potential Improvements:
-Hyperparameter Optimization:
-Systematic grid search for optimal parameters
-Experiment with different optimizer algorithms
+
+## Limitations and Future Improvements
+### Current Model Limitations:
+- Accuracy Plateau: Final accuracy of 90.14% falls just short of the 90% target
+- Class Imbalance in Performance: Significant variance in performance across classes (Shirt vs Trouser)
+- Limited Architecture Complexity: Current model may be underfitting for this dataset, but I was unable to make it more complex because my computer could not handle it and kept overheating
+### Potential Improvements:
+Hyperparameter Optimization with a systematic grid search for optimal parameters and experiments with different optimizer algorithms.
 
