@@ -49,7 +49,7 @@ The training logs show consistent improvement across all experiments
 ### Analysis of Best Model:
 The best performing model used a learning rate of 0.001, 3 convolutional layers, and 128 neurons in the dense layer. This configuration achieved a final test accuracy of 90.14%, which is the highest among all experiments conducted. 
 ### Training and Evaluation Results Analysis:
-The model achieved an overall test accuracy of 90.14%. When examining individual class performance, there are significant variations
+The model achieved an overall test accuracy of 90.14%. When examining individual class performance, there are significant variations.
 Classes with particularly low accuracy:
 - Shirt: 70.8% accuracy (lowest performing class)
 - Coat: 83.4% accuracy
@@ -57,7 +57,7 @@ Classes with particularly low accuracy:
 - Pullover: 83.1% accuracy
 These four classes, all upper-body garments, show lower performance compared to other categories like Trouser (96.6%), Bag (97.8%), and Sandal (98.7%).
 ### Confusion Matrix Analysis:
-![matrix](C:\Users\sarah\Downloads\dsF25\confusion_matrix.png)
+[cmatrix](analysis/confusion_matrix.png)
 #### Key observations:
 - Trouser classification is nearly perfect with 966/1000 correct predictions
 - Shirt is frequently misclassified as T-shirt/top (144 instances), Coat (91 instances), and Pullover (59 instances)
